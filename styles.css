@@ -1,0 +1,61 @@
+.row-flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+#main {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    grid-template-rows: repeat(3, auto);
+}
+
+#hero {
+    display:flex;
+    grid-row: 1 / 2;
+    align-items: center;
+}
+
+#hero::before {
+    content: "";
+    background: url(./images/Harrison_Blvd_Image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 90vh;
+    width: 161vh;
+    position: relative;
+}
+
+#title{
+position: absolute;
+color:white;
+left: 50%;
+font-size: 24pt;
+}
+
+body{
+    margin: auto;
+    color: black;
+    font-size: .85rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.header-home{
+color: black;
+background: white;
+padding: 0px 0px 4px;
+}
+
+.w3-container{
+    padding: 35px 15px 15px;
+}
+
+
+.Max_Logo{
+    
+    margin: 0px 0px 0px 20px;
+}
